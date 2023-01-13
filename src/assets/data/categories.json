@@ -1,0 +1,18 @@
+{
+    "categories": [
+		{
+			"image":"https://www.expatica.com/app/uploads/sites/2/2014/05/spanish-cuisine.jpg",
+			"image_alt":"Foto de platos españoles",
+			"title": "Recetas de España",
+			"description": "La gastronomía de España es una variada forma de preparar platos, que se ve enriquecida por las aportaciones de las diversas regiones que componen el país. Cocina de origen que oscila entre el estilo rural y el costero, representa una diversidad fruto de muchas culturas, así como de paisajes y climas.",
+			"url": "/spanish-recipes"
+		},
+		{
+			"image":"https://i.ibb.co/Cw2PGvs/content.jpg",
+			"image_alt":"Fotos de comidas tipicas americas",
+			"title": "Recetas de Estados Unidos",
+			"description": "La gastronomía de Estados Unidos corresponde a una mezcla muy variada y algo de otras gastronomías, esto es así debido a que es un país creado fundamentalmente por inmigrantes procedentes diferentes países de Europa, Asia, África, y otros países. Podría denominarse como autóctona la gastronomía de los indígenas de Norteamérica.",
+			"url": "/usa-recipes"
+		}
+	]
+}
