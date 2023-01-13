@@ -1,0 +1,220 @@
+{
+	"cardsOptions": [
+		{
+			"image":"https://www.expatica.com/app/uploads/sites/2/2014/05/spanish-cuisine.jpg",
+			"image_alt":"Foto de platos españoles",
+			"title": "Recetas de España",
+			"description": "La gastronomía de España es una variada forma de preparar platos, que se ve enriquecida por las aportaciones de las diversas regiones que componen el país. Cocina de origen que oscila entre el estilo rural y el costero, representa una diversidad fruto de muchas culturas, así como de paisajes y climas.",
+			"url": "/spanish-recipes"
+		},
+		{
+			"image":"https://i.ibb.co/Cw2PGvs/content.jpg",
+			"image_alt":"Fotos de comidas tipicas americas",
+			"title": "Recetas de Estados Unidos",
+			"description": "La gastronomía de Estados Unidos corresponde a una mezcla muy variada y algo de otras gastronomías, esto es así debido a que es un país creado fundamentalmente por inmigrantes procedentes diferentes países de Europa, Asia, África, y otros países. Podría denominarse como autóctona la gastronomía de los indígenas de Norteamérica.",
+			"url": "/usa-recipes"
+		}
+	],
+	"recipes": {
+		"spanish": [
+			{
+				"title":"Paella",
+				"image":"https://i.imgur.com/0eXNGYV.jpeg",
+				"image_alt":"Foto de una pallea española",
+				"description":"La paella es un plato de origen valenciano, que se prepara con arroz, verduras, carne y pescado. Es uno de los platos más representativos de la gastronomía española.",
+				"ingredientes":[
+					{
+						"name":"Arroz",
+						"amount":"2 Tazas"
+					},
+					{
+						"name":"Caldo de ave",
+						"amount":"4 Tazas"
+					},
+					{
+						"name":"Pollo picado en trozos",
+						"amount":"1/2 KG"
+					},
+					{
+						"name":"Conejo picado en trozos",
+						"amount":"1/2 KG"
+					},
+					{
+						"name":"Alubias blancas planas (Garrofó)",
+						"amount":"1/2 Taza"
+					},
+					{
+						"name":"Judias de ferradura (Judias verdes planas)",
+						"amount":"1 puñado"
+					},
+					{
+						"name":"Tomate mediano",
+						"amount":"1"
+					},
+					{
+						"name":"Pimiento rojo",
+						"amount":"1/2"
+					},
+					{
+						"name":"Pimentón en polvo",
+						"amount":"1 cucharadita"
+					},
+					{
+						"name":"Romero",
+						"amount":"Una rama pequeña"
+					},
+					{
+						"name":"Aceite de oliva extra virgen",
+						"amount":""
+					},
+					{
+						"name":"Sal",
+						"amount":""
+					},
+					{
+						"name":"Pimienta",
+						"amount":""
+					},
+					{
+						"name":"Algunas hebras de azafrán",
+						"amount":""
+					}
+
+				],
+				"preparation":[
+					{
+						"step":"Paso 1",
+						"description":"En una paella mediana agrega aceite de oliva y comienza a freír a fuego suave las piezas de pollo y de conejo hasta que estén ligeramente doradas por todos lados."
+					},
+					{
+						"step":"Paso 2",
+						"description":"Agrega entonces las judías verdes planas y revuélvelas unos minutos, debes estar atento a que no se quemen."
+					},
+					{
+						"step":"Paso 3",
+						"description":"Ahora le toca el turno al tomate y las judías blancas. El tomate previamente picado en trozos pequeños o, si lo prefieres, rallado. Mezcla bien con los demás ingredientes. En este momento vas a echar también el pimentón en polvo. Deja que se sofría todo por unos minutos."
+					},
+					{
+						"step":"Paso 4",
+						"description":"Seguidamente agrega el caldo de pollo, unas hebras de azafrán, el romero y una pizca de sal y pimienta recién molida. Sube la temperatura de la hornilla."
+					},
+					{
+						"step":"Paso 5",
+						"description":"Cuando comience a hervir el líquido, agrega el arroz de manera uniforme en la paella y revuelve un poco. Revisa cómo está de sal y si es necesario échale más."
+					},
+					{
+						"step":"Paso 6",
+						"description":"En este momento puedes agregar el pimiento rojo por encima, cortado en tiritas para adornar."
+					},
+					{
+						"step":"Paso 7",
+						"description":"Cuando el agua se evapore casi del todo, siempre atento a que no se seque por completo, baja la temperatura de la paella y cubre con una tapa grande ó con papel aluminio."
+					},
+					{
+						"step":"Paso 8",
+						"description":"Deja cocinar por unos 10 minutos."
+					},
+					{
+						"step":"Paso 9",
+						"description":"Transcurrido este tiempo prueba el grano, y si está listo, apaga y ¡a comer paella valenciana!"
+					}
+				],
+				"id":"0"
+			},
+			{
+				"title":"Tortilla de patatas",
+				"image":"",
+				"image_alt":"",
+				"description":"La tortilla de patatas es un plato típico de la cocina española, que se prepara con patatas, huevos y aceite de oliva. Es uno de los platos más populares de la gastronomía española.",
+				"ingredientes":[
+
+				],
+				"preparation":[
+
+				],
+				"id":"1"
+			},
+			{
+				"title":"Gazpacho",
+				"image":"",
+				"image_alt":"",
+				"description":"El gazpacho es un plato típico de la cocina española, que se prepara con tomate, pan, aceite de oliva, vinagre y ajo. Es uno de los platos más populares de la gastronomía española.",
+				"ingredientes":[
+
+				],
+				"preparation":[
+
+				],
+				"id":"2"
+			},
+			{
+				"title":"Ensalada de tomate",
+				"image":"",
+				"image_alt":"",
+				"description":"La ensalada de tomate es un plato típico de la cocina española, que se prepara con tomate, aceite de oliva, vinagre y sal. Es uno de los platos más populares de la gastronomía española.",
+				"ingredientes":[
+
+				],
+				"preparation":[
+
+				],
+				"id":"3"
+			},
+			{
+				"title":"Croquetas",
+				"image":"",
+				"image_alt":"",
+				"description":"Las croquetas son un plato típico de la cocina española, que se prepara con patatas, harina, leche, aceite de oliva, sal y pimienta. Es uno de los platos más populares de la gastronomía española.",
+				"ingredientes":[
+
+				],
+				"preparation":[
+
+				],
+				"id":"4"
+			},
+			{
+				"title":"Albóndigas",
+				"image":"",
+				"image_alt":"",
+				"description":"Las albóndigas son un plato típico de la cocina española, que se prepara con carne picada, pan, huevo, aceite de oliva, sal y pimienta. Es uno de los platos más populares de la gastronomía española.",
+				"ingredientes":[
+
+				],
+				"preparation":[
+
+				],
+				"id":"5"
+			},
+			{
+				"title":"Pisto",
+				"image":"",
+				"image_alt":"",
+				"description":"El pisto es un plato típico de la cocina española, que se prepara con tomate, pimiento, cebolla, aceite de oliva, sal y pimienta. Es uno de los platos más populares de la gastronomía española.",
+				"ingredientes":[
+
+				],
+				"preparation":[
+
+				],
+				"id":"6"
+			}
+		],
+		"usa": [
+			{
+				"title":"Hamburguesa",
+				"image":"",
+				"image_alt":"",
+				"description":"La hamburguesa es un plato típico de la cocina estadounidense, que se prepara con carne picada, pan, lechuga, tomate, cebolla, aceite de oliva, sal y pimienta. Es uno de los platos más populares de la gastronomía estadounidense.",
+				"ingredientes":[
+
+				],
+				"preparation":[
+
+				],
+				"id":"0"
+			}
+		]
+	}
+
+}
