@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipesService } from 'src/app/services/recipes.service';
+import { Recipes } from 'src/app/model/recipes';
 
 @Component({
     selector: 'app-spanish-recipes',
@@ -8,13 +9,13 @@ import { RecipesService } from 'src/app/services/recipes.service';
 })
 
 export class SpanishRecipesPage implements OnInit {
-    recipes: any;
-
-    constructor(private RecipesService: RecipesService) { }
+    constructor(private RecipesService: RecipesService) {}
 
     ngOnInit() {
-        this.RecipesService.getRecipes().subscribe(data => {
-            this.recipes = data['spanish'];
-        });
+      this.RecipesService.retriveRecipes('spanish');
+    }
+
+    get recipes(): Recipes[] {
+      return this.RecipesService.getRecipes();
     }
 }

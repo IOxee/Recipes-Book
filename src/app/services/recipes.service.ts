@@ -1,22 +1,49 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
+import { Details } from '../model/details';
+import { Recipes } from '../model/recipes';
+
+
+
 
 @Injectable({
-    providedIn: 'root'
+	providedIn: 'root'
 })
+
 export class RecipesService {
+	ddData: Details[] = [];
+	retriveRecipesArr: Recipes[] = [];
 
-    constructor(private http: HttpClient) { }
+	constructor(private http: HttpClient) { }
 
-    getRecipes(): Observable<any> {
-        return this.http.get('assets/data/recipes.json');
-    }
+	// , private deatils: Details
 
-    getRecipesByID(id: any) {
-        return this.http.get('assets/data/recipes.json').pipe(map((data: any) => {
-            return data.spanish[id];
-        }));
-    }
+	getRecipes(): Recipes[] {
+		return this.retriveRecipesArr;
+	}
+
+	retriveRecipes(lang: string) {
+		return this.http.get('assets/data/recipes.json').subscribe((data: any) => {
+			this.retriveRecipesArr = data[lang];
+		});
+	}
+
+	getRecipesByID(id: any, lang: string): Recipes | null {
+		for (let i = 0; i < this.retriveRecipesArr.length; i++) {
+			if (this.retriveRecipesArr[i].id === id) {
+				return this.retriveRecipesArr[i];
+			}
+		}
+		return null;
+	}
+
+	getDetailsData() {
+		console.log(this.ddData);
+		return this.ddData;
+	}
 }
 
+/*
+
+*/

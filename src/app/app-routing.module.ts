@@ -18,6 +18,18 @@ const routes: Routes = [
   {
     path: 'usa-recipes',
     loadChildren: () => import('./pages/recipes/usa-recipes/usa-recipes.module').then( m => m.UsaRecipesPageModule)
+  },
+  {
+    path: 'tabnav',
+    loadChildren: () => import('./pages/tabs/tabnav/tabnav.module').then( m => m.TabnavPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./pages/tabs/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'products',
+    loadChildren: () => import('./pages/tabs/products/products.module').then( m => m.ProductsPageModule)
   }
 ];
 

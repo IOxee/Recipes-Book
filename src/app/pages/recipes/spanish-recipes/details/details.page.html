@@ -1,59 +1,51 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-title class="ion-text-center">Informacion de la receta</ion-title>
-        <ion-buttons slot="start">
-            <ion-back-button defaultHref="home"></ion-back-button>
-        </ion-buttons>
-    </ion-toolbar>
+	<ion-toolbar>
+		<ion-title class="ion-text-center">Informacion de la receta</ion-title>
+		<ion-buttons slot="start">
+			<ion-back-button defaultHref="home"></ion-back-button>
+		</ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <!-- <ion-slides>
-        <ion-slide *ngFor="let item of items">
-            <img [src]="item.image" [alt]="item.image_alt">
-            <ion-card-header>
-                <ion-card-title>{{ item.title }}</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-                {{ item.description }}
-            </ion-card-content>
-        </ion-slide>
-    </ion-slides> -->
+	<ion-card>
+		<ion-slides>
+      <ion-slide *ngFor="let item of a.carrouselImages">
+        <img alt="{{item['alt']}}" src="{{item['image']}}" />
+      </ion-slide>
+    </ion-slides>
+		<ion-card-header>
+			<ion-card-title>{{a.title}}</ion-card-title>
+		</ion-card-header>
+		<ion-card-content class="">
+			{{a.description}}
+			<ion-button id="open-ingredients" expand="block">Ver ingredientes</ion-button>
+			<ion-button id="open-make" expand="block">Ver Elaboración</ion-button>
+		</ion-card-content>
+	</ion-card>
 
-    <ion-card>
-        <img alt="{{this.recipes.image_alt}}" src="{{this.recipes.image}}" />
-        <ion-card-header>
-            <ion-card-title>{{this.recipes.title}}</ion-card-title>
-        </ion-card-header>
-        <ion-card-content class="">
-            {{this.recipes.description}}
-            <ion-button id="open-ingredients" expand="block">Ver ingredientes</ion-button>
-            <ion-button id="open-make" expand="block">Ver Elaboración</ion-button>
-        </ion-card-content>
-    </ion-card>
+	<ion-modal trigger="open-ingredients" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75, 1.0]">
+		<ng-template>
+			<ion-content class="ion-padding">
+				<ion-list *ngFor="let ingredient of a.ingredientes">
+          <ion-item>
+            {{ingredient.name}} <div slot="end">{{ingredient['amount']}}</div>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 
-    <ion-modal trigger="open-ingredients" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75, 1.0]">
-        <ng-template>
-            <ion-content class="ion-padding">
-                <ion-list *ngFor="let recipe of recipes">
-                    <ion-item *ngFor="let ingredient of this.recipes.ingredientes">
-                        {{ingredient['name']}} <div slot="end">{{ingredient['amount']}}</div>
-                    </ion-item>
-                </ion-list>
-            </ion-content>
-        </ng-template>
-    </ion-modal>
-
-    <ion-modal trigger="open-make" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75, 1.0]">
-        <ng-template>
-            <ion-content class="ion-padding">
-                <ion-list *ngFor="let recipe of recipes">
-                    <ion-item *ngFor="let make of this.recipes.preparation">
-                        <div slot="start">{{make['step']}}</div>
-                        <div>{{make['description']}}</div>
-                    </ion-item>
-                </ion-list>
-            </ion-content>
-        </ng-template>
-    </ion-modal>
+  <ion-modal trigger="open-make" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75, 1.0]">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <ion-list *ngFor="let make of a.preparation">
+          <ion-item>
+            <div slot="start">{{make['step']}}</div>
+            <div>{{make['description']}}</div>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>
